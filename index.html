@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Estrella - Ferretería</title>
+  <meta name="description" content="Ferretería La Estrella: herramientas, material eléctrico, plomería, pintura y más en León, Gto.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" sizes="any">
+</head>
+<body>
+
+  <!-- Iconos reutilizables (se llaman con <use href="#i-nombre">) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-drill" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 0 1 3 3v2H3z"/><path d="M17 10h4M17 12h4"/><path d="M7 13v7h4l1-7"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+    <symbol id="i-roller" viewBox="0 0 24 24"><rect x="3" y="3" width="14" height="6" rx="1.5"/><path d="M17 6h3v6h-9v3"/><rect x="9" y="15" width="4" height="6" rx="1"/></symbol>
+    <symbol id="i-bricks" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9.3h18M3 14.7h18M9 4v5.3M15 9.3v5.4M9 14.7V20"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M12 2.5l8 4.5v9l-8 4.5-8-4.5V7z"/><circle cx="12" cy="11.5" r="3"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M12 21v-8"/><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 16c0-3-2-5-6-5 0 3 2 5 6 5z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 9.5h7M8.5 12.5h4"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v9H3z"/><path d="M14 9h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  </svg>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    <div class="container">
+      <span>Envíos a domicilio en León, Gto.</span>
+      <span>Tel. 477 319 83 21</span>
+    </div>
+  </div>
+
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#inicio" class="brand" aria-label="La Estrella - Inicio">
+        <img src="logo.jpg" alt="La Estrella Ferretería" class="brand-logo">
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn btn-navy">Pedir cotización</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Portada -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow">Herramientas · Materiales · Asesoría</div>
+          <h1 class="hd">Todo para tu obra, <span>en un solo lugar</span></h1>
+          <p class="lead">Herramientas, material eléctrico, plomería, pintura y mucho más. Te asesoramos en mostrador y te lo llevamos hasta tu puerta.</p>
+          <div class="hero-actions">
+            <a href="#productos" class="btn btn-orange">Ver productos</a>
+            <!-- DEMO: este botón no hace nada. Para activarlo, cámbialo por:
+                 <a href="https://wa.me/52NUMERO" class="btn btn-outline">Cotizar por WhatsApp</a> -->
+            <button type="button" class="btn btn-outline">Cotizar por WhatsApp</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="mosaic">
+            <div class="tile tile-white">
+              <svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg>
+              <span class="tile-name hd">Herramientas</span>
+            </div>
+            <div class="tile tile-soft">
+              <svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg>
+              <span class="tile-name hd">Eléctrico</span>
+            </div>
+            <div class="tile tile-dark">
+              <svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg>
+              <span class="tile-name hd">Tornillería</span>
+            </div>
+            <div class="tile tile-white">
+              <svg class="icon" aria-hidden="true"><use href="#i-bricks"/></svg>
+              <span class="tile-name hd">Construcción</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buscador (demostrativo) -->
+    <section class="search-wrap">
+      <div class="search" role="search">
+        <div class="search-row">
+          <input class="search-input" type="search" aria-label="Buscar productos" placeholder="¿Qué necesitas? Ej. taladro, pintura, tubo PVC">
+          <button type="button" class="btn btn-orange">Buscar</button>
+        </div>
+        <div class="quick">
+          <strong>Lo más buscado:</strong>
+          <a href="#productos">Taladros</a>
+          <a href="#productos">Pintura</a>
+          <a href="#productos">Cemento</a>
+          <a href="#productos">Tubería</a>
+          <a href="#productos">Cable</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías -->
+    <section id="productos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title hd">Categorías</h2>
+          <a href="#productos" class="link-more">Ver todo el catálogo</a>
+        </div>
+        <div class="cards">
+          <a href="#productos" class="card-cat">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+            <h3 class="hd">Herramientas manuales</h3>
+            <p>Martillos, llaves, pinzas y desarmadores</p>
+          </a>
+          <a href="#productos" class="card-cat">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-drill"/></svg></span>
+            <h3 class="hd">Herramientas eléctricas</h3>
+            <p>Taladros, esmeriladoras, sierras y accesorios</p>
+          </a>
+          <a href="#productos" class="card-cat">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-drop"/></svg></span>
+            <h3 class="hd">Plomería</h3>
+            <p>Tubería, conexiones, llaves y tinacos</p>
+          </a>
+          <a href="#productos" class="card-cat">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg></span>
+            <h3 class="hd">Electricidad</h3>
+            <p>Cable, contactos, apagadores y focos</p>
+          </a>
+          <a href="#productos" class="card-cat">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-roller"/></svg></span>
+            <h3 class="hd">Pinturas</h3>
+            <p>Vinílica, esmalte, brochas y rodillos</p>
+          </a>
+          <a href="#productos" class="card-cat">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-bricks"/></svg></span>
+            <h3 class="hd">Construcción</h3>
+            <p>Cemento, varilla, block y adhesivos</p>
+          </a>
+          <a href="#productos" class="card-cat">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+            <h3 class="hd">Tornillería</h3>
+            <p>Tornillos, tuercas, clavos y taquetes</p>
+          </a>
+          <a href="#productos" class="card-cat">
+            <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span>
+            <h3 class="hd">Jardinería</h3>
+            <p>Mangueras, palas, tijeras y riego</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ofertas -->
+    <section id="ofertas" class="section offers">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title hd">Ofertas de la semana</h2>
+          <a href="#ofertas" class="link-more">Ver todas las ofertas</a>
+        </div>
+        <div class="cards">
+          <article class="product">
+            <div class="product-img">
+              <span class="badge">-[%]</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-drill"/></svg>
+            </div>
+            <div class="product-body">
+              <span class="product-brand">[Marca]</span>
+              <h3 class="product-name hd">Taladro percutor 13 mm</h3>
+              <div class="price-row">
+                <span class="price hd">$[PRECIO]</span>
+                <span class="old-price">$[ANTES]</span>
+              </div>
+              <button type="button" class="btn btn-navy">Agregar a cotización</button>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <span class="badge">-[%]</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg>
+            </div>
+            <div class="product-body">
+              <span class="product-brand">[Marca]</span>
+              <h3 class="product-name hd">Juego de llaves combinadas</h3>
+              <div class="price-row">
+                <span class="price hd">$[PRECIO]</span>
+                <span class="old-price">$[ANTES]</span>
+              </div>
+              <button type="button" class="btn btn-navy">Agregar a cotización</button>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <span class="badge">-[%]</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-roller"/></svg>
+            </div>
+            <div class="product-body">
+              <span class="product-brand">[Marca]</span>
+              <h3 class="product-name hd">Pintura vinílica cubeta 19 L</h3>
+              <div class="price-row">
+                <span class="price hd">$[PRECIO]</span>
+                <span class="old-price">$[ANTES]</span>
+              </div>
+              <button type="button" class="btn btn-navy">Agregar a cotización</button>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <span class="badge">-[%]</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg>
+            </div>
+            <div class="product-body">
+              <span class="product-brand">[Marca]</span>
+              <h3 class="product-name hd">Rollo de cable calibre 12</h3>
+              <div class="price-row">
+                <span class="price hd">$[PRECIO]</span>
+                <span class="old-price">$[ANTES]</span>
+              </div>
+              <button type="button" class="btn btn-navy">Agregar a cotización</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por qué comprar con nosotros -->
+    <section class="benefits">
+      <div class="container">
+        <h2 class="section-title hd">Por qué comprar con nosotros</h2>
+        <div class="cards">
+          <div class="benefit">
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+            <h3 class="hd">Asesoría en mostrador</h3>
+            <p>Te ayudamos a elegir la herramienta o el material correcto para tu trabajo.</p>
+          </div>
+          <div class="benefit">
+            <svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg>
+            <h3 class="hd">Entrega a domicilio</h3>
+            <p>Llevamos tu pedido a casa o directo a la obra, sin que pierdas tu día.</p>
+          </div>
+          <div class="benefit">
+            <svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg>
+            <h3 class="hd">Precio para contratistas</h3>
+            <p>Cotizamos por volumen para maestros de obra, plomeros y electricistas.</p>
+          </div>
+          <div class="benefit">
+            <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            <h3 class="hd">Marcas de confianza</h3>
+            <p>Trabajamos con marcas reconocidas para que tu compra rinda y dure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marcas -->
+    <section id="marcas" class="brands">
+      <div class="container">
+        <h2 class="hd">Marcas que manejamos</h2>
+        <div class="brand-list">
+          <div class="brand-chip hd">[Marca]</div>
+          <div class="brand-chip hd">[Marca]</div>
+          <div class="brand-chip hd">[Marca]</div>
+          <div class="brand-chip hd">[Marca]</div>
+          <div class="brand-chip hd">[Marca]</div>
+          <div class="brand-chip hd">[Marca]</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visítanos + Google Maps -->
+    <section id="contacto" class="visit">
+      <div class="container">
+        <div class="visit-info">
+          <div class="kicker">Visítanos</div>
+          <h2 class="hd">Pasa por tu material</h2>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <div>
+                <div class="info-label">Dirección</div>
+                <div class="info-value">248 Río Mayo, La Romana, León, Gto.</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <div>
+                <div class="info-label">Horarios</div>
+                <div class="info-value">Lunes a sábado [10:30 a 20:00]</div>
+                <div class="info-value">Domingos [10:00 a 15:00]</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div>
+                <div class="info-label">Teléfono y WhatsApp</div>
+                <div class="info-value">477 319 83 21</div>
+              </div>
+            </div>
+          </div>
+          <div class="visit-actions">
+            <a class="btn btn-navy btn-lg" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=248%20R%C3%ADo%20Mayo%2C%20La%20Romana%2C%20Le%C3%B3n%2C%20Guanajuato">Cómo llegar</a>
+            <!-- DEMO: este botón no hace nada. Para activarlo, cámbialo por:
+                 <a href="https://wa.me/52NUMERO" class="btn btn-orange btn-lg">Escríbenos por WhatsApp</a> -->
+            <button type="button" class="btn btn-orange btn-lg">Escríbenos por WhatsApp</button>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            title="Mapa de ubicación de la ferretería La Estrella"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.92090916418!2d-101.63122932494234!3d21.075820880585255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbe1d181a657b%3A0x8686ba3a216bead7!2sR%C3%ADo%20Mayo%20248c%2C%20Delta%202000%2C%2037549%20Le%C3%B3n%20de%20los%20Aldama%2C%20Gto.!5e0!3m2!1ses!2smx!4v1793319226095!5m2!1ses!2smx"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="stripe"></div>
+    <div class="footer-body">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-name hd">La Estrella</div>
+            <div class="footer-sub">Ferretería</div>
+            <p class="footer-text">Herramientas y materiales para tu casa, tu taller y tu obra.</p>
+          </div>
+          <div class="footer-col">
+            <h3 class="hd">Productos</h3>
+            <a href="#productos">Herramientas</a>
+            <a href="#productos">Plomería</a>
+            <a href="#productos">Electricidad</a>
+            <a href="#productos">Pinturas</a>
+          </div>
+          <div class="footer-col">
+            <h3 class="hd">Tienda</h3>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#marcas">Marcas</a>
+            <a href="#contacto">Cotizaciones</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+          <div class="footer-col wide">
+            <h3 class="hd">Contacto</h3>
+            <span>477 319 83 21</span>
+            <span>[CORREO]</span>
+            <span>Dirección</span>
+            <span>Bahía de Sena 248 Rio Mayo</span>
+            <span>Col. Delta 2000</span>
+          </div>
+        </div>
+        <div class="copyright">© 2026 La Estrella. Todos los derechos reservados. · Página demostrativa</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
